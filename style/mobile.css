@@ -3,88 +3,6 @@ By Ethan McGarry
 Written for ITMD-361-01
 */
 
-/*Background style shared across pages, layered with transparent white on top*/
-body { 
-	margin: auto;
-	background: #000000 url(../img/earthrise.jpg) no-repeat fixed center;
-}
-/*Styling for table of contents shared across pages, no change for*/
-#tocBar {
-	background-color: #8A2BE2;
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
-#tocContainer {
-	position: relative;
-	float: left;
-	left: 50%;
-	display: block;
-}
-
-#tocContainer ul {
-	position: relative;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	right: 50%;
-	float: left;
-	display: block;
-}
-
-#tocContainer ul li {
-	float: left;
-	padding: 15px 50px;
-}
-
-#tocContainer ul li a {
-	font-size: 40px;
-	color: 	#F0F8FF;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: Arial, sans-serif;
-	background-color: #8A2BE2;
-}
-
-#tocContainer ul li a:hover {
-	background-color: #4B0082;
-}
-
-#tocContainer ul li a:active {
-	color: 	#FFC0CB;
-}
-
-/*Hidden TOC header for validtor, shared across pages, no change for mobile*/
-h6 {
-	font-size: 1px;
-	color: #8A2BE2;
-	background-color: #8A2BE2;
-}
-
-/*Blanket h1/h2 styles shared across pages*/
-h1 {
-	text-align: center;
-	padding: 10px;
-	color: #4B0082;
-	font-weight: bold;
-	font-size: 25px;
-	text-transform: uppercase;
-	font-family: 'Signika', sans-serif;
-}
-
-h2 {
-	text-align: center;
-	padding: 0px;
-	color: #4B0082;
-	font-weight: bold;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-family: 'Signika', sans-serif;
-}
-
-/*Mobile formatting for index and map pages*/
 @media only screen and (max-width: 400px) {
 	/*Resume page styling*/
 	.resumeHead {
@@ -92,7 +10,7 @@ h2 {
 		padding-left: 1%;
 		color: #4B0082;
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 10px;
 		text-transform: uppercase;
 		font-family: 'Signika', sans-serif;
 		line-height: 130%;
@@ -113,17 +31,17 @@ h2 {
 	.resumeBody strong {
 		font-weight: bold;
 		text-transform: uppercase;
-		padding-bottom: 4px;
+		padding-bottom: 2px;
 	}
 
 	.resumeBody ul {
 		padding-left: 3%;
 		list-style-type: square;
-		padding-bottom: 3px;
+		padding-bottom: 1px;
 	}
 }
 
-	#mapHead h1 {
+	h1 {
 	padding: 10px;
 	font-size: 40px;
 }
@@ -160,14 +78,14 @@ h2 {
 	}
 
 	.sandwichBody img iframe {
-		max-width: 50%;
+		max-width: 280px;
 		height: auto;
 	}
 
 	/*Video Formatting, only on Sandwich page*/
 	iframe {
-		min-width: 560px;
-		min-height: 315px;
+		min-width: 280px;
+		min-height: 151px;
 	}
 
 	/*Bread page styling*/
@@ -204,14 +122,14 @@ h2 {
 		max-height: 404px;
 	}
 
-	/*Formatting for collection of bread images */
+	/*Formatting for collection of bread images on mobile, move floats to one side*/
 	#breadLeft {
 		float: left;
 		width: 50%;
 	}
 
 	#breadRight {
-		float: right;
+		float: left;
 		width: 50%;
 	}
 
@@ -226,4 +144,9 @@ h2 {
 		max-height: 404px;
 		padding: 5px 10px;
 	}
+	
+	h1 {
+	padding: 10px;
+	font-size: 40px;
+}
 }
