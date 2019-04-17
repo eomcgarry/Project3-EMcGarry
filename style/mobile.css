@@ -3,3 +3,229 @@ By Ethan McGarry
 Written for ITMD-361-01
 */
 
+/*Background style shared across pages, layered with transparent white on top*/
+body { 
+	margin: auto;
+	background: #000000 url(../img/earthrise.jpg) no-repeat fixed center;
+}
+/*Styling for table of contents shared across pages, no change for*/
+#tocBar {
+	background-color: #8A2BE2;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#tocContainer {
+	position: relative;
+	float: left;
+	left: 50%;
+	display: block;
+}
+
+#tocContainer ul {
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	right: 50%;
+	float: left;
+	display: block;
+}
+
+#tocContainer ul li {
+	float: left;
+	padding: 15px 50px;
+}
+
+#tocContainer ul li a {
+	font-size: 40px;
+	color: 	#F0F8FF;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	background-color: #8A2BE2;
+}
+
+#tocContainer ul li a:hover {
+	background-color: #4B0082;
+}
+
+#tocContainer ul li a:active {
+	color: 	#FFC0CB;
+}
+
+/*Hidden TOC header for validtor, shared across pages, no change for mobile*/
+h6 {
+	font-size: 1px;
+	color: #8A2BE2;
+	background-color: #8A2BE2;
+}
+
+/*Blanket h1/h2 styles shared across pages*/
+h1 {
+	text-align: center;
+	padding: 10px;
+	color: #4B0082;
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	padding: 0px;
+	color: #4B0082;
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Signika', sans-serif;
+}
+
+/*Mobile formatting for index and map pages*/
+@media only screen and (max-width: 400px) {
+	/*Resume page styling*/
+	.resumeHead {
+		text-align: left;
+		padding-left: 1%;
+		color: #4B0082;
+		font-weight: bold;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'Signika', sans-serif;
+		line-height: 130%;
+	}
+
+	.resumeBody {
+		font-family: Arial, sans-serif;
+		padding-bottom: 3px;
+		padding: 0px;
+		line-height: 130%;
+	}
+
+	.resumeBody p {
+		font-weight: bold;
+		padding-left: 2%;
+	}
+
+	.resumeBody strong {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding-bottom: 4px;
+	}
+
+	.resumeBody ul {
+		padding-left: 3%;
+		list-style-type: square;
+		padding-bottom: 3px;
+	}
+}
+
+	#mapHead h1 {
+	padding: 10px;
+	font-size: 40px;
+}
+
+/*Mobile formatting for sandwich and bread pages*/
+@media only screen and (max-width: 700px) { 
+	/*Sandwich page styling*/
+	.sandwichBody {
+		font-family: Arial, sans-serif;
+		padding-bottom: 3px;
+		padding: 0px;
+		line-height: 200%;
+		text-align: center;
+	}
+
+	.sandwichBody p {
+		font-weight: bold;
+	}
+
+	.sandwichBody ul {
+		padding-left: 3%;
+		list-style-type: square;
+		padding-bottom: 3px;
+	}
+
+	.sandwichBody h3 {
+		text-align: center;
+		padding: 0px;
+		color: #4B0082;
+		font-weight: bold;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'Signika', sans-serif;
+	}
+
+	.sandwichBody img iframe {
+		max-width: 50%;
+		height: auto;
+	}
+
+	/*Video Formatting, only on Sandwich page*/
+	iframe {
+		min-width: 560px;
+		min-height: 315px;
+	}
+
+	/*Bread page styling*/
+	.breadBody {
+		font-family: Arial, sans-serif;
+		padding-bottom: 3px;
+		padding: 0px;
+		line-height: 200%;
+		text-align: center;
+	}
+
+	.breadBody p {
+		font-weight: bold;
+	}
+
+	.sandwichBody ul {
+		padding-left: 3%;
+		list-style-type: square;
+		padding-bottom: 3px;
+	}
+
+	.breadBody h3 {
+		text-align: center;
+		padding: 0px;
+		color: #4B0082;
+		font-weight: bold;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'Signika', sans-serif;
+	}
+
+	.breadBody img {
+		max-width: 303px;
+		max-height: 404px;
+	}
+
+
+
+	/*Formatting for collection of bread images */
+	#breadLeft {
+		float: left;
+		width: 50%;
+	}
+
+	#breadRight {
+		float: right;
+		width: 50%;
+	}
+
+	#breadLeft img { 
+		width: 303px;
+		max-height: 404px;
+		padding: 5px 10px;
+	}
+
+	#breadRight img { 
+		width: 303px;
+		max-height: 404px;
+		padding: 5px 10px;
+	}
+}
