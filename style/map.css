@@ -7,15 +7,15 @@ Written for ITMD-361-01
   max-width: 700px;
   max-height: 500px;
   background-color: #8A2BE2;
-  border-radius: 3px;
+  border-radius: 1px;
   margin: auto;
   overflow: hidden;
 }
 
 #map {
-  max-width: 700px;
-  max-height: 500px;
+  max-width: 690px;
+  max-height: 490px;
   background-color: #DCDCDC;
-  margin: 15px auto;
-  border-radius: 1px;
+  margin: auto;
+  border-radius: 2px;
 }
