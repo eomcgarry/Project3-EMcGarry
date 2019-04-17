@@ -3,24 +3,3 @@ By Ethan McGarry
 Written for ITMD-361-01
 */
 
-#mapHead {
-	padding: 10px;
-	font-size: 40px;
-}
-
-.mapWrapper {
-  max-width: 700px;
-  max-height: 500px;
-  background-color: #8A2BE2;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 2px;
-  
-}
-
-#map {
-  max-width: 700px;
-  max-height: 500px;
-  background-color: #DCDCDC;
-  margin: 15px auto;
-}
