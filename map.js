@@ -14,3 +14,5 @@ function initMap() {
 	// Initialize variable for click listener on marker
 	marker.addListener('click', function() {info.open(map, marker)});
 }
+
+google.maps.event.addDomListener (window, 'load', initMap);
