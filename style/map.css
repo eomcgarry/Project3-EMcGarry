@@ -2,16 +2,19 @@
 By Ethan McGarry
 Written for ITMD-361-01
 */
-/*
+
 .mapWrapper {
-  max-width: 700px;
-  max-height: 500px;
+  width: 700px;
+  height: 510px;
   background-color: #8A2BE2;
   border-radius: 1px;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
 }
-*/
+
 #map {
-  width: 80%;
+  width: 690px;
+  height: 490px;
+  background-color: #DCDCDC;
+  margin: 30px auto;
 }
